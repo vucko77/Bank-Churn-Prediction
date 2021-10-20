@@ -1,7 +1,11 @@
 [//]: # (Image reference)
 [slika1]: https://img.youtube.com/vi/2b2LPtljqdA/0.jpg
+[xray]: documention/doc1.png
+[results]: documention/doc2.png
+
 # Bank churn prediction
 This is a project for churn prediction written in **Python** and *Scikit-Learn* 
+
 
 > Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines
 ## Team Structure
@@ -12,7 +16,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 
 | Video1 | Video2| Video3|
 | ---- | ------ |-----------|
-|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
+|[![Training][results]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
 The following ML techniques wer used in this project
 - Dimensionality Reduction
@@ -53,6 +57,13 @@ Screenshot of training performance :
 <p align = "center">
 <img src="https://www.researchgate.net/profile/Tapash-Sarkar/publication/327720895/figure/fig3/AS:672135315996676@1537260955913/Neural-network-training-performance-plot-with-best-validation.png" alt = "Training" width="50%" height="50%"/>
 </p>
+
+![Training][xray]
+
+<p align = "center">
+<img src="documention/doc1.png" alt = "Training" width="50%" height="50%"/>
+</p>
+
 
 
 ## Evalauation results
