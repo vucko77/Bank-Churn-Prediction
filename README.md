@@ -8,6 +8,9 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 4. Daniela
 ---
 
+| Video1 | Video2| Video3|
+| ---- | ------ |-----------|
+|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
 The following ML techniques wer used in this project
 - Dimensionality Reduction
