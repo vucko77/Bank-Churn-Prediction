@@ -7,8 +7,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 3. Petar 
 4. Daniela
 ---
-~~This was mistaken text~~
-~This was mistaken text~
+
 ## Project Specification
 The following ML techniques wer used in this project
 - Dimensionality Reduction
@@ -58,10 +57,9 @@ Screenshot of training performance :
 | 99% | 92% |91%     |
 
 
-~~Hello
 
 ## Fixed bugs :
-- ~Failure in installation because of ...~
+- ~~Failure in installation because of ...~~
 - ~~Improved model performance~~
 - ~~Fixed bug in sort algorithm~~
 
