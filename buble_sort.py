@@ -18,7 +18,7 @@ def bubbleSort(arr):
 
 
 # Driver code to test above
-arr = [64, 34, 25, 12, 22, 11, 90]
+arr = [200, 34, 25, 12, 22, 11, 90]
 
 bubbleSort(arr)
 print("Sorted array is:")
