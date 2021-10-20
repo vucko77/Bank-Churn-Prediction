@@ -1,3 +1,5 @@
+[//]: # (Image reference)
+[slika1]: https://img.youtube.com/vi/2b2LPtljqdA/0.jpg
 # Bank churn prediction
 This is a project for churn prediction written in **Python** and *Scikit-Learn* 
 
@@ -10,7 +12,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 
 | Video1 | Video2| Video3|
 | ---- | ------ |-----------|
-|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training](https://img.youtube.com/vi/2b2LPtljqdA/0.jpg)](https://www.youtube.com/watch?v=2b2LPtljqdA)|
+|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
 The following ML techniques wer used in this project
 - Dimensionality Reduction
