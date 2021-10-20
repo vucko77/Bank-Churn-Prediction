@@ -63,3 +63,7 @@ Screenshot of training performance :
 - ~~Improved model performance~~
 - ~~Fixed bug in sort algorithm~~
 
+## We tried the following Deep Learning Pretrained models:
+- [x] Resnet50
+- [ ] VGG16
+- [ ] Densenet
