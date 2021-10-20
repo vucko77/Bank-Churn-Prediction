@@ -17,7 +17,8 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 
-# DriverA code to test above
+
+# Drivers code to test above
 arr = [200, 34, 25, 12, 22, 11, 0]
 
 bubbleSort(arr)
