@@ -3,7 +3,9 @@ for i in range (0,50):
 
 A = "Hello"
 B= "Brainster"
-print(A+B)
+C = "."
+print(A+B+C)
+
 
 #this is the new ediiit check 123
 # new feature
