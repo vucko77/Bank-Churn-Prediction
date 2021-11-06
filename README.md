@@ -271,10 +271,4 @@ from sklearn.model_selection import KFold
 
 For download the dataset please click [HERE](documention/dataset_bank.csv)
 
-![Training][xray]
-
-<p align = "center">
-<img src="documention/doc1.png" alt = "Training" width="50%" height="50%"/>
-</p>
-
-
+### May the Force be with you
