@@ -16,7 +16,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 5. Dashmir Ibishi
 ---
 
-| Video1 | Video2| Video3|
+| Video1 | Video2| Video3| ne koristime nikakvi videa- ova e proba za edite direktno vo GitHub
 | ---- | ------ |-----------|
 |[![Training][results]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
