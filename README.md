@@ -11,7 +11,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 ## Team Structure
 
 #### supreme court of the galactic republic
-  **Kiril Cevtkov**
+  **Kiril Cevtkov** - "Master Yoda"
 
 #### 
 1. Goran Stojanovski Team leader - "Obi Wan Kenobi"
