@@ -10,8 +10,10 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 > Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines
 ## Team Structure
 1. Vladimir Vuksanovic
-3. Petar 
-4. Daniela
+2. Goran Stojanovski
+3. Goran Puntevski
+4. Petar Trajchevski 
+5. Dashmir Ibishi
 ---
 
 | Video1 | Video2| Video3|
