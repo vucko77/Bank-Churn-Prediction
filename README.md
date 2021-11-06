@@ -269,14 +269,7 @@ from sklearn.model_selection import KFold
 
 ## Dataset
 
-For download the dataset please click [HERE](http://google.com)
-
-Screenshot of training performance : 
-![Training](https://www.researchgate.net/profile/Atanu-Kumar-Paul/publication/321382145/figure/fig5/AS:579337981054986@1515136346983/Neural-network-training-validation-and-test-plot-for-the-output-response-Oxirane.png)
-
-<p align = "center">
-<img src="https://www.researchgate.net/profile/Tapash-Sarkar/publication/327720895/figure/fig3/AS:672135315996676@1537260955913/Neural-network-training-performance-plot-with-best-validation.png" alt = "Training" width="50%" height="50%"/>
-</p>
+For download the dataset please click [HERE](documention/dataset_bank.csv)
 
 ![Training][xray]
 
@@ -285,21 +278,3 @@ Screenshot of training performance :
 </p>
 
 
-
-## Evalauation results
-
-| Test | Traing | Validation|
-| ---- | ------ |-----------|
-| 99% | 92% |91%     |
-
-
-
-## Fixed bugs :
-- ~~Failure in installation because of ...~~
-- ~~Improved model performance~~
-- ~~Fixed bug in sort algorithm~~
-
-## We tried the following Deep Learning Pretrained models:
-- [x] Resnet50
-- [ ] VGG16
-- [ ] Densenet
