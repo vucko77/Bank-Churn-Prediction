@@ -16,9 +16,6 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 5. Dashmir Ibishi  - "C-3PO" (internet / language protocol specialist)
 ---
 
-| Video1 | Video2| Video3| ne koristime nikakvi videa- ova e proba za edite direktno vo GitHub
-| ---- | ------ |-----------|
-|[![Training][results]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
 The following ML techniques wer used in this project
 - EDA
@@ -271,4 +268,4 @@ from sklearn.model_selection import KFold
 
 For download the dataset please click [HERE](documention/dataset_bank.csv)
 
-### May the Force be with you
+## May the Force be with you
