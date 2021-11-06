@@ -131,7 +131,12 @@ standscal = StandardScaler()
 
 pip install scikit-learn
 `
+/Users/vladimirvuksanovikj/Desktop/ScreenshotVisualisation1
 
+<p align = "center">
+<img src="/Users/vladimirvuksanovikj/Desktop/ScreenshotVisualisation1" 
+alt = "Training" width="50%" height="50%"/>
+</p>
 
 ## Dataset
 
