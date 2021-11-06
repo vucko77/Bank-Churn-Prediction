@@ -99,11 +99,53 @@ columnsNO = ['Customer_Age', 'Dependent_count', 'Total_Relationship_Count', 'Mon
 
 df_num_rs[columnsNO] = standscal.fit_transform(df_num_rs[columnsNO])
 ```
+Screenshot of visualisation of scaled features: 
+<p align = "center">
+<img src="documention/ScreenshotVisualisation1.png" height="50%"/>
+</p>
 
+CatBoost enocoding of categorical data
+```
+
+y1 = target.copy()
+df_cat_cb = df_cat.copy()
+
+import category_encoders as ce
+
+cat_columns = ['Gender', 'Education_Level', 'Marital_Status', 'Income_Category','Card_Category']
+catBoostEncoder = ce.CatBoostEncoder(cols=cat_columns)
+df_cat_cb = catBoostEncoder.fit_transform(df_cat_cb, y1)
+```
+One hot encoding check
+```
+from sklearn.preprocessing import OneHotEncoder
+
+transformer2 = OneHotEncoder(sparse=False) 
+one_hot_encoder = transformer2.fit_transform(df_cat_ohe)
+df_cat_ohe = pd.concat([df_cat_ohe, pd.DataFrame(one_hot_encoder)], axis='columns')
+```
+CatBoost encoder shows better results- it is used for feature selection
+```
+from sklearn.feature_selection import SelectKBest, f_classif
+
+selector = SelectKBest(f_classif, k=14)
+selector_fit = selector.fit(X1_train, y1_train)
+dfscores = pd.DataFrame(selector_fit.scores_)
+dfcolumns = pd.DataFrame(X1_train.columns) 
+featureScores = pd.concat([dfcolumns,dfscores], axis=1)
+featureScores.columns = ['Specs','Score']  
+print(featureScores.nlargest(14,'Score'))  
+```
+
+- Classification models 
+Following classifiers were used: Decision tree, Random Forest, KNN, XGboost
+Those models were apply ower CatBoost encoded dataset
+  - Decision tree 
 ```
 
 ```
-- Classification models
+  - Random Forest
+  - KNN
   - XG-Boost
 - Evaluation and comparisons, metrics
 - Hyperparameter Optimization
@@ -128,15 +170,17 @@ from sklearn.preprocessing import RobustScaler
 
 from sklearn.preprocessing import StandardScaler 
 standscal = StandardScaler()
+from sklearn.preprocessing import OneHotEncoder
+
+import category_encoders as ce
+
+from sklearn.feature_selection import SelectKBest, f_classif
 
 pip install scikit-learn
 `
-/Users/vladimirvuksanovikj/Desktop/ScreenshotVisualisation1
 
-<p align = "center">
-<img src="/Users/vladimirvuksanovikj/Desktop/ScreenshotVisualisation1" 
-alt = "Training" width="50%" height="50%"/>
-</p>
+
+
 
 ## Dataset
 
