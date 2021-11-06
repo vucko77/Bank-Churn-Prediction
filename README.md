@@ -230,6 +230,7 @@ Screenshot of best model classification report and confusion matrix (XGBoost cla
 
 
 ## Installation
+```
 !pip install scikit-learn
 
 import sklearn
@@ -261,11 +262,13 @@ from sklearn.metrics import plot_roc_curve
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import KFold
-
+```
 
 
 ## Dataset
 
 For download the dataset please click [HERE](documention/dataset_bank.csv)
+
+## 
 
 ## May the Force be with you
