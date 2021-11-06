@@ -15,10 +15,10 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 
 #### 
 1. Goran Stojanovski Team leader - "Obi Wan Kenobi"
-2. Vladimir Vuksanovic           - "star troopers 1"
-3. Goran Puntevski  - "star troopers 2"
-4. Petar Trajchevski  - "star troopers 3" (Specialist in Pasta)
-5. Dashmir Ibishi  - "star troopers 4" (internet protocol specialist)
+2. Vladimir Vuksanovic           - "luke skywalker"
+3. Goran Puntevski  - "Han Solo"
+4. Petar Trajchevski  - "R2 D2" (Specialist in Pasta)
+5. Dashmir Ibishi  - "C-3PO" (internet protocol specialist)
 ---
 
 | Video1 | Video2| Video3| ne koristime nikakvi videa- ova e proba za edite direktno vo GitHub
