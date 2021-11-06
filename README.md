@@ -1,8 +1,3 @@
-[//]: # (Image reference)
-[slika1]: https://img.youtube.com/vi/2b2LPtljqdA/0.jpg
-[xray]: documention/doc1.png
-[results]: documention/doc2.png
-
 # Bank churn prediction
 This is a project for churn prediction written in **Python** and *Scikit-Learn* 
 
@@ -26,11 +21,16 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 |[![Training][results]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|[![Training][slika1]](https://www.youtube.com/watch?v=2b2LPtljqdA)|
 ## Project Specification
 The following ML techniques wer used in this project
-- Dimensionality Reduction
-  - PCA
-  - TSNE
-- XG-Boost
-- Random Forest
+- EDA
+  - basic statistics/ visualization 
+- Data preprocessing/  normalization/ missing data/ categorical data
+- Feature Anaysis, Extraction & Selection
+- Classification models
+  - XG-Boost
+- Evaluation and comparisons, metrics
+- Hyperparameter Optimization
+- Final evaluations and comparisons
+- Discussion, Concusions, Future improvements
 
 For training Random forest we used the following code snippet :
 
