@@ -140,29 +140,22 @@ print(featureScores.nlargest(14,'Score'))
 - Classification models 
 Following classifiers were used: Decision tree, Random Forest, KNN, XGboost
 Those models were apply ower CatBoost encoded dataset
-  - Decision tree 
-```
-from sklearn.model_selection import train_test_split
-X1_train, X1_test, y1_train, y1_test = train_test_split(X_cb, y1, test_size=0.3, random_state=42)
 
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score
-
-dtCBclass = DecisionTreeClassifier(max_depth = 5, random_state = 42)
-dtCBclass.fit(X1_train,y1_train)
-y_pred_cb_dt = dtCBclass.predict(X1_test)
-dtCBscore = accuracy_score(y1_test, y_pred_cb_dt)
-dtCBscore
-```
-Screenshot of classification_report: 
-<p align = "center">
-<img src="documention/classification_report.png" height="50%"/>
-</p>
-
+Application of Random Forest classifiers give best result with Cat Boost encoded data set
   - Random Forest
 ```
+from sklearn.ensemble import RandomForestClassifier
 
+rfCB = RandomForestClassifier(random_state = 42)
+rfCB.fit(X1_train,y1_train)
+y_pred_cb_rf = rfCB.predict(X1_test)
+rfCBscore = accuracy_score(y1_test, y_pred_cb_rf)
+rfCBscore
 ```
+Screenshot of confusion matrix for DecissionTree
+<p align = "center">
+<img src="documention/classification_report_and_ plot_confusion_matrix_RF.png" height="50%"/>
+</p>
 
   - KNN
   - XG-Boost
@@ -197,7 +190,7 @@ from sklearn.feature_selection import SelectKBest, f_classif
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
-
+from sklearn.ensemble import RandomForestClassifier
 pip install scikit-learn
 `
 
