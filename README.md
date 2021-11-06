@@ -169,26 +169,67 @@ model_FS = XGBClassifier()
 model_FS.fit(X1_new_train,y1_train)
 
 y_FS_pred_xg = model_FS.predict(X1_new_test)
-
+```
 Screenshot of classification report and confusion matrix for XGBoost classifier
 <p align = "center">
 <img src="documention/classification_report_confusion_matrix_XGBoost.png" height="50%"/>
 </p>
 
-
-
-```
-
 - Evaluation and comparisons, metrics
+
+```
+ax = plt.gca()
+plot_xboost = plot_roc_curve(model_new, XGB_test,  y1_test, ax=ax)
+
+ax = plt.gca()
+plot_fs = plot_roc_curve(model_FS, X1_new_test, y1_test, ax=ax)
+
+plt.show()
+```
+
 - Hyperparameter Optimization
+XGBoost model was futher fine tuned by using "Grid search" hyperparameter optimization
+```
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import KFold
+
+kf = KFold(n_splits=5, shuffle=True)
+print(type(kf))
+params = {
+        'min_child_weight': [1, 5, 10],
+        'gamma': [0.5, 1, 1.5, 2, 5],
+        'learning_rate': [0.1, 0.15, 0.2, 0.25],
+        'subsample': [0.6, 0.8, 1.0],
+        'colsample_bytree': [0.6, 0.8, 1.0],
+        'max_depth': [3, 4, 5]
+        }
+model = GridSearchCV(estimator = model_FS, 
+                     param_grid = params,
+                     scoring = 'roc_auc',
+                     cv = kf,
+                     verbose = 5,
+                    n_jobs = -1
+                    )
+model.fit(X1_new_train,y1_train)
+
+print("Best model: ", model.best_estimator_)
+print("Best Parameters: ", model.best_params_)
+print("Best score ", model.best_score_ * 100.0)
+
+
+best_model = XGBClassifier(colsample_bytree=0.6,gamma=0.5, learning_rate=0.15, max_depth=5, min_child_weight=1, 
+                           subsample=1)
+best_model.fit(X1_new_train,y1_train)
+```
+
 - Final evaluations and comparisons
-- Discussion, Concusions, Future improvements
 
-For training Random forest we used the following code snippet :
+Screenshot of best model classification report and confusion matrix (XGBoost classifier after Grid search hyperparameter optimization)
+<p align = "center">
+<img src="documention/BestModel_classification_report_confusion_matrix.png" height="50%"/>
+</p>
 
-```
-
-```
 
 
 ## Installation
@@ -218,7 +259,11 @@ from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
 from xgboost import XGBClassifier
 `
+from sklearn.metrics import plot_roc_curve
 
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import KFold
 
 
 
