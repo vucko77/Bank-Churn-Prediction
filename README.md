@@ -23,8 +23,86 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 The following ML techniques wer used in this project
 - EDA
   - basic statistics/ visualization 
-- Data preprocessing/  normalization/ missing data/ categorical data
+Future division by types (numerical/ categorical) + basic statistics
+```
+df_num = df.select_dtypes(include = ['float64', 'int64'])
+df_cat = df.select_dtypes(include = ['object'])
+df_num.describe()
+df_num.plot(kind='box',subplots = True, figsize=(20,8), fontsize = 7, sharex = False)
+```
+
+- Data preprocessing
+  - normalization/ missing data/ categorical data
+
+Structure of futures
+```
+a = df_num.Customer_Age.value_counts(bins = 10)
+b = df_num.Dependent_count.value_counts()
+c = df_num.Months_on_book.value_counts(bins = 10)
+d = df_num.Total_Relationship_Count.value_counts()
+e = df_num.Months_Inactive_12_mon.value_counts(sort = True, bins = 10)
+f = df_num.Contacts_Count_12_mon.value_counts(bins = 10)
+g = df_num.Credit_Limit.value_counts(bins = 10)
+h = df_num.Total_Revolving_Bal.value_counts(bins = 10)
+i = df_num.Avg_Open_To_Buy.value_counts(bins = 10)
+j = df_num.Total_Amt_Chng_Q4_Q1.value_counts(bins = 10)
+k = df_num.Total_Trans_Amt.value_counts(bins = 10)
+l = df_num.Total_Trans_Ct.value_counts(bins = 10)
+m = df_num.Total_Ct_Chng_Q4_Q1.value_counts(bins = 10)
+n = df_num.Avg_Utilization_Ratio.value_counts(bins = 10)
+
+a, b, c, d, e, f, g, h, i, j, k, l, m, n
+```
+checking of NaN values
+```
+df_num.isna().sum()
+```
+
+Visualisation of future: "Months_on_book"
+```
+plot=sns.countplot(x='Months_on_book', data=df_num)
+plt.xticks(rotation=45)
+plt.show()
+```
+Replacing outlayers with NaN
+```
+df_num['Months_on_book']=df_num.Months_on_book.replace({-2147483647.0:np.nan,
+                                                       2147483647.0:np.nan,
+                                                       3.21000000e+11:np.nan})
+```
 - Feature Anaysis, Extraction & Selection
+
+Reshape of futures "Months_on_book" : following code snippet :
+```
+mob_imputer = SimpleImputer(missing_values = np.NaN, strategy = 'mean') # go definirame Simple imputer, stratgegijata = mean
+df_num.Months_on_book = mob_imputer.fit_transform(df_num['Months_on_book'].values.reshape(-1,1))[:,0]
+```
+
+For futures with outlayers we used Robust Scaler with the following code snippet :
+```
+from sklearn import preprocessing
+from sklearn.preprocessing import RobustScaler # za varijablite so outleeri
+
+robscal = RobustScaler()
+columnsO = ['Months_on_book','Credit_Limit', 'Avg_Open_To_Buy', 'Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt', 'Total_Ct_Chng_Q4_Q1']
+    
+df_num_rs[columnsO] = robscal.fit_transform(df_num_rs[columnsO])
+```
+
+For futures without outlayers we used Standard Scaler with the following code snippet :
+```
+from sklearn.preprocessing import StandardScaler 
+standscal = StandardScaler()
+
+columnsNO = ['Customer_Age', 'Dependent_count', 'Total_Relationship_Count', 'Months_Inactive_12_mon', 'Contacts_Count_12_mon',
+            'Total_Revolving_Bal', 'Total_Trans_Ct', 'Avg_Utilization_Ratio']
+
+df_num_rs[columnsNO] = standscal.fit_transform(df_num_rs[columnsNO])
+```
+
+```
+
+```
 - Classification models
   - XG-Boost
 - Evaluation and comparisons, metrics
@@ -35,21 +113,22 @@ The following ML techniques wer used in this project
 For training Random forest we used the following code snippet :
 
 ```
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_classification
-X, y = make_classification(n_samples=1000, n_features=4,
-...                            n_informative=2, n_redundant=0,
-...                            random_state=0, shuffle=False)
-clf = RandomForestClassifier(max_depth=2, random_state=0)
-clf.fit(X, y)
-RandomForestClassifier(...)
-print(clf.predict([[0, 0, 0, 0]]))
+
 ```
 
 
 ## Installation
 For installing scikit-learn please do :
-`
+import sklearn
+from sklearn.impute import SimpleImputer
+
+
+from sklearn import preprocessing
+from sklearn.preprocessing import RobustScaler
+
+from sklearn.preprocessing import StandardScaler 
+standscal = StandardScaler()
+
 pip install scikit-learn
 `
 
