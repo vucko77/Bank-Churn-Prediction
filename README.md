@@ -152,13 +152,33 @@ y_pred_cb_rf = rfCB.predict(X1_test)
 rfCBscore = accuracy_score(y1_test, y_pred_cb_rf)
 rfCBscore
 ```
-Screenshot of confusion matrix for DecissionTree
+Screenshot of classification report and confusion matrix for Random Forest
 <p align = "center">
 <img src="documention/classification_report_and_ plot_confusion_matrix_RF.png" height="50%"/>
 </p>
 
-  - KNN
+
   - XG-Boost
+Additionaly XGBoost was applied, and best results were obtained in comparison with other classifiers
+The best resulst were obtained by appling XGBoost on CatBoost encoded features selection data set
+```
+import xgboost as xgb
+from xgboost import XGBClassifier
+
+model_FS = XGBClassifier()
+model_FS.fit(X1_new_train,y1_train)
+
+y_FS_pred_xg = model_FS.predict(X1_new_test)
+
+Screenshot of classification report and confusion matrix for XGBoost classifier
+<p align = "center">
+<img src="documention/classification_report_confusion_matrix_XGBoost.png" height="50%"/>
+</p>
+
+
+
+```
+
 - Evaluation and comparisons, metrics
 - Hyperparameter Optimization
 - Final evaluations and comparisons
@@ -172,7 +192,8 @@ For training Random forest we used the following code snippet :
 
 
 ## Installation
-For installing scikit-learn please do :
+!pip install scikit-learn
+
 import sklearn
 from sklearn.impute import SimpleImputer
 
@@ -191,7 +212,11 @@ from sklearn.feature_selection import SelectKBest, f_classif
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
-pip install scikit-learn
+
+!pip install xgboost
+
+import xgboost as xgb
+from xgboost import XGBClassifier
 `
 
 
