@@ -156,7 +156,7 @@ dtCBscore
 ```
 Screenshot of classification_report: 
 <p align = "center">
-<img src="documention/ScreenshotVisualisation1.png" height="50%"/>
+<img src="documention/classification_report.png" height="50%"/>
 </p>
 
   - Random Forest
