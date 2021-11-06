@@ -231,6 +231,15 @@ Screenshot of best model classification report and confusion matrix (XGBoost cla
 
 ## Installation
 ```
+import pandas as pd   
+import numpy as np    
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+
+import warnings
+warnings.filterwarnings('ignore')
+%matplotlib inline
+
 !pip install scikit-learn
 
 import sklearn
