@@ -18,7 +18,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 2. Vladimir Vuksanovic           - "luke skywalker"
 3. Goran Puntevski  - "Han Solo"
 4. Petar Trajchevski  - "R2 D2" (Specialist in Pasta)
-5. Dashmir Ibishi  - "C-3PO" (internet protocol specialist)
+5. Dashmir Ibishi  - "C-3PO" (internet / language protocol specialist)
 ---
 
 | Video1 | Video2| Video3| ne koristime nikakvi videa- ova e proba za edite direktno vo GitHub
