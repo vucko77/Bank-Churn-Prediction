@@ -9,11 +9,16 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 
 > Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines
 ## Team Structure
-1. Vladimir Vuksanovic
-2. Goran Stojanovski
-3. Goran Puntevski
-4. Petar Trajchevski 
-5. Dashmir Ibishi
+
+#### supreme court of the galactic republic
+  **Kiril Cevtkov**
+
+#### 
+1. Goran Stojanovski Team leader - "Obi Wan Kenobi"
+2. Vladimir Vuksanovic           - "star troopers 1"
+3. Goran Puntevski  - "star troopers 2"
+4. Petar Trajchevski  - "star troopers 3" (Specialist in Pasta)
+5. Dashmir Ibishi  - "star troopers 4" (internet protocol specialist)
 ---
 
 | Video1 | Video2| Video3| ne koristime nikakvi videa- ova e proba za edite direktno vo GitHub
