@@ -276,7 +276,7 @@ from sklearn.model_selection import KFold
 
 ## Dataset
 
-For download the dataset please click [HERE](documention/dataset_bank.csv)
+To download the dataset please click [HERE](documention/dataset_bank.csv)
 
 ## 
 
