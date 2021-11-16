@@ -8,7 +8,7 @@ The model developed in this work uses machine learning techniques that are expla
 
 
 
-> This is a project for churn prediction written in **Python** and *Scikit-Learn* 
+> This is a project for churn prediction written in **Python** and *Scikit-Learn* .
 > Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines
 ## Team Structure
 
