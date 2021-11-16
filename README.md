@@ -192,7 +192,7 @@ plt.show()
 ```
 
 - Hyperparameter Optimization
-XGBoost model was futher fine tuned by using "Grid search" hyperparameter optimization
+- XGBoost model was futher fine tuned by using "Grid search" hyperparameter optimization
 ```
 from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
 from sklearn.model_selection import StratifiedKFold
