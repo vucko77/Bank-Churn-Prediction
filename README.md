@@ -1,5 +1,11 @@
 # Bank churn prediction
 This is a project for churn prediction written in **Python** and *Scikit-Learn* 
+Aquiring new customers is very costly for the companies so they tend to closely follow churn rate. 
+The full cost of churn includes both lost revenue and the marketing costs involved with replacing those customers with new ones.
+That is why churn rate prediction has become important part of the business of the companies.
+Due to the direct effect on the revenues of the companies, companies are seeking to develop means to predict potential customer to churn since predicting and preventing customer churn represents a huge additional potential revenue source for every business.
+The model developed in this work uses machine learning techniques that are explained in more depth, bellow.
+
 
 
 > Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines
