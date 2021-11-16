@@ -17,7 +17,7 @@ This is a project for churn prediction written in **Python** and *Scikit-Learn*
 ---
 
 ## Project Specification
-The following ML techniques wer used in this project
+The following ML techniques were used in this project
 - EDA
   - basic statistics/ visualization 
 Future division by types (numerical/ categorical) + basic statistics
@@ -75,7 +75,7 @@ mob_imputer = SimpleImputer(missing_values = np.NaN, strategy = 'mean') # go def
 df_num.Months_on_book = mob_imputer.fit_transform(df_num['Months_on_book'].values.reshape(-1,1))[:,0]
 ```
 
-For futures with outlayers we used Robust Scaler with the following code snippet :
+For features with outlayers we used Robust Scaler with the following code snippet :
 ```
 from sklearn import preprocessing
 from sklearn.preprocessing import RobustScaler # za varijablite so outleeri
@@ -86,7 +86,7 @@ columnsO = ['Months_on_book','Credit_Limit', 'Avg_Open_To_Buy', 'Total_Amt_Chng_
 df_num_rs[columnsO] = robscal.fit_transform(df_num_rs[columnsO])
 ```
 
-For futures without outlayers we used Standard Scaler with the following code snippet :
+For features without outlayers we used Standard Scaler with the following code snippet :
 ```
 from sklearn.preprocessing import StandardScaler 
 standscal = StandardScaler()
@@ -101,7 +101,7 @@ Screenshot of visualisation of scaled features:
 <img src="documention/ScreenshotVisualisation1.png" height="50%"/>
 </p>
 
-CatBoost enocoding of categorical data
+CatBoost encoding of categorical data
 ```
 
 y1 = target.copy()
@@ -136,9 +136,9 @@ print(featureScores.nlargest(14,'Score'))
 
 - Classification models 
 Following classifiers were used: Decision tree, Random Forest, KNN, XGboost
-Those models were apply ower CatBoost encoded dataset
+Those models were applied over CatBoost encoded dataset
 
-Application of Random Forest classifiers give best result with Cat Boost encoded data set
+Application of Random Forest classifiers gave best result with Cat Boost encoded data set
   - Random Forest
 ```
 from sklearn.ensemble import RandomForestClassifier
